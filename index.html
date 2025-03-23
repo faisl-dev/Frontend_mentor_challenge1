@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="data.json">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Title -->
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="container-one">
+      <h2>
+        Your Result
+      </h2>
+      <div class="container">
+        <p>
+          <span>76</span><br> of 100
+        </p>
+      </div>
+      <p>
+        Great
+      </p>
+      <p>
+        You scored higher than 65% of the people who
+        have taken these tests.
+      </p>
+    </div>
+    <div class="container-two">
+      <h2>
+        Summary
+      </h2>
+      <div class="container">
+        <!-- Category 1  -->
+        <div class="progress reaction-bgcolor">
+          <div class="text-logo reaction">
+            <img src="" id="reaction-icon" alt="">
+            <p id="reaction-name">
+              Loading...
+            </p>
+          </div>
+          <div>
+            <p id="reaction-score"></p><span> / 100</span>
+          </div>
+        </div>
+        <!-- Category 2 -->
+        <div class="progress memory-bgcolor">
+          <div class="text-logo memory">
+            <img src="" id="memory-icon" alt="">
+            <p id="memory-name">
+              Loading...
+            </p>
+          </div>
+          <div>
+            <p id="memory-score"></p><span> / 100</span>
+          </div>
+        </div>
+        <!-- Category 3 -->
+        <div class="progress verbal-bgcolor">
+          <div class="text-logo verbal">
+            <img src="" id="verbal-icon" alt="">
+            <p id="verbal-name">
+              Loading...
+            </p>
+          </div>
+          <div>
+            <p id="verbal-score"></p><span> / 100</span>
+          </div>
+        </div>
+        <!-- Category 4 -->
+        <div class="progress visual-bgcolor">
+          <div class="text-logo visual">
+            <img src="" id="visual-icon" alt="">
+            <p id="visual-name">
+              Loading...
+            </p>
+          </div>
+          <div>
+            <p id="visual-score"></p><span> / 100</span>
+          </div>
+        </div>
+      </div>
+      <!-- Button -->
+      <button>
+        Continue
+      </button>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">faisl-dev</a>.
+  </div>
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>

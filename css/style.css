@@ -1,0 +1,217 @@
+/* Start Variables */
+:root {
+    --main-color: hsl(241, 100%, 89%);
+}
+/* End Variables */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsla(241, 100%, 89%, 0.411);
+    text-align: center;
+    font-family: Hanken Grotesk;
+}
+/* End Global Rules */
+/* Start Device responsiveness */
+/* Phone  */
+@media (max-width: 375px) {
+    div.main-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+    }
+    .main-container div.container-one {
+        width: 100%;
+        height: 100%;
+        padding: 15px 50px 20px;
+        border-radius: 0 0 30px 30px;
+    }
+    .main-container div.container-one .container {
+        width: 140px;
+        padding: 15px 0;
+    }
+    .main-container div.container-one :nth-child(3) {
+        margin-bottom: 20px;
+    }
+    .main-container div.container-one :nth-child(4) {
+        font-size: 16px;
+        min-width: 260px;
+        max-width: 360px;
+        margin: auto;
+    }
+    .main-container div.container-two {
+        width: 100%;
+        height: 100%;
+    }
+    .main-container div.container-two .container {
+        gap: 15px;
+    }
+    .main-container div.container-two h2 {
+        margin-top: 5px;
+        margin-bottom: 25px;
+    }
+    .main-container div.container-two button {
+        padding: 14px 20px;
+        margin-bottom: 10px;
+    }
+}
+/* Desktop  */
+@media (max-width: 1440px) {
+    .main-container {
+        width: 100%;
+    }
+}
+/* End Device responsiveness */
+/* Start Component1 */
+.main-container {
+    padding: 0;
+    margin: 250px auto 0;
+    background-color: #ffffff;
+    width: 560px;
+    height: 410px;
+    border-radius: 20px;
+    display: flex;
+}
+.main-container .container-one {
+    background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: #ffffff;
+    width: 260px;
+    height: 410px;    
+    margin: 0;
+    padding: 15px 25px 0;
+    border-radius: 20px;
+}
+.main-container .container-one h2 {
+    color: var(--main-color);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.main-container .container-one p:first-child {
+    color: var(--main-color);
+}
+.main-container .container-one .container {
+    width: 150px;
+    margin: 25px auto;
+    padding: 20px 0;
+    border-radius: 110px;
+    background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.main-container .container-one p span {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 800;
+}
+.main-container .container-one :nth-child(3) {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 35px;
+    line-height: 10px;
+}
+.main-container .container-one :nth-child(4) {
+    width: 100%;
+    font-size: 15px;
+    color: var(--main-color);
+}
+/* End Component1 */
+/* Start Component2 */
+.container-two {
+    margin: 0;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 410px;
+}
+.container-two .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    padding: 0 5px;
+    width: 100%;
+}
+.container-two h2 {
+    margin-top: 15px;
+    width: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.container-two .container .progress {
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-two .container .reaction-bgcolor {
+    background-color: hsla(0, 100%, 67%, 0.068);
+}
+.container-two .container .progress .reaction p {
+    color: hsl(0, 100%, 67%);
+}
+.container-two .container .memory-bgcolor {
+    background-color: hsla(39, 100%, 56%, 0.068);
+}
+.container-two .container .progress .memory p {
+    color: hsl(39, 100%, 56%);
+}
+.container-two .container .verbal-bgcolor {
+    background-color: hsla(166, 100%, 37%, 0.068);
+}
+.container-two .container .progress .verbal p {
+    color: hsl(166, 100%, 37%);
+}
+.container-two .container .visual-bgcolor {
+    background-color: hsla(234, 85%, 45%, 0.068);
+}
+.container-two .container .progress .visual p {
+    color: hsl(234, 85%, 45%);
+}
+.container-two .container .progress div {
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+    display: inline-flex;
+    align-items: center;
+    column-gap: 4px;
+}
+.container-two .container .progress div span {
+    color: var(--main-color);
+    font-weight: 700;
+}
+.container-two .container .progress .text-logo {
+    display: inline-flex;
+    gap: 7px;
+}
+.container-two .container .progress .text-logo p {
+    font-weight: 700;
+}
+.container-two button {
+    align-self: center;
+    width: 90%;
+    margin: 30px 0 0;
+    padding: 10px 20px;
+    border: 0 transparent;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: hsl(224, 30%, 27%);
+}
+.container-two button:hover {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+/* End Component2 */
+.attribution {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
