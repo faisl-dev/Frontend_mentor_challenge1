@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: hsla(241, 100%, 89%, 0.411);
+    background-color: hsl(221, 100%, 96%);
     text-align: center;
     font-family: Hanken Grotesk;
 }
